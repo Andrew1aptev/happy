@@ -40,7 +40,7 @@
         padding: 90px 30px 30px 30px;
         row-gap: 40px;
         width: 320px;
-        overflow-y: auto;
+        overflow: hidden;
         transition: transform .6s ease-in-out;
         justify-content: space-between;
     }
