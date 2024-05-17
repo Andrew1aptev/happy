@@ -1,0 +1,152 @@
+.features{
+    padding: 100px 0px;
+    background-color: var(--features-bg-color);
+}
+.features__container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.features__title{
+    margin-bottom: 45px;
+}
+.features__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    row-gap: 15px;
+    column-gap: 15px;
+}
+@media only screen and (max-width: 460px) {
+    .features__grid{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+.features__card{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    min-height: 490px;
+    border-radius: 20px;
+    background-color: var(--features-bg-card);
+    color: var(--features-color-text);
+}
+@media only screen and (max-width: 460px) {
+    .features__card{
+        min-height: 400px;
+    }
+}
+.features__img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    width: 227px;
+    min-height: 450px;
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
+.features__img--1{
+    background-image: url('./../img/features/phone-1.png');
+}
+.features__img--2{
+    background-image: url('./../img/features/phone-2.png');
+}
+.features__img--3{
+    background-image: url('./../img/features/phone-3.png');
+}
+.features__img--4{
+    background-image: url('./../img/features/phone-4.png');
+}
+.features__img--5{
+    background-image: url('./../img/features/phone-5.png');
+}
+.features__img--6{
+    background-image: url('./../img/features/phone-6.png');
+}
+@media only screen and (max-width: 460px) {
+    .features__img{
+        bottom: -100px;
+        min-height: 450px;
+    }
+}
+.features__card-title{
+    color: inherit;
+    margin-bottom: 11px;
+    font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
+    line-height: 1.25;
+    text-align: center;
+}
+.features__card-title--blue{
+    color: var(--blue-color);
+}
+.features__card-title--red{
+    color: var(--red-color);
+}
+.features__card-title--orange{
+    color: var(--orange-color);
+}
+.features__card-title--pink{
+    color: var(--pink-color);
+}
+.features__card-title--blueLight{
+    color: var(--blueLight-color);
+}
+.features__card-title--purple{
+    color: var(--purple-color);
+}
+.features__card-text{
+    color: inherit;
+    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+    line-height: 1.49;
+    text-align: center;
+}
+.features__card-bottom{
+    position: relative;
+    z-index: 5;
+    align-self: end;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 48px;
+    padding-right: 45px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    border-radius: 20px;
+    background-color: var(--features-bg-cardBottom);
+}
+.features__card-bottom--icon::before{
+    content: "";
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+}
+.features__card-bottom--icon-calendar::before{
+    background-image: url('./../img/icons/calendar.svg');
+}
+.features__card-bottom--icon-list::before{
+    background-image: url('./../img/icons/list.svg');
+}
+.features__card-bottom--icon-type::before{
+    background-image: url('./../img/icons/type.svg');
+}
+.features__card-bottom--icon-split::before{
+    background-image: url('./../img/icons/split.svg');
+}
+.features__card-bottom--icon-upload::before{
+    background-image: url('./../img/icons/upload.svg');
+}
+.features__card-bottom--icon-focus::before{
+    background-image: url('./../img/icons/focus.svg');
+}
+@media only screen and (max-width: 460px) {
+    .features__card-bottom{
+        min-height: 150px;
+    }
+}

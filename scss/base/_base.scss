@@ -1,0 +1,53 @@
+body{
+    font-size: var(--font-size-main);
+    font-family: var(--font-family);
+}
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+.title{
+    color: #fff;
+    font-weight: 400;
+    font-size: clamp(1.125rem, 0.875rem + 1.25vw, 2rem);
+    line-height: 1.12;
+    text-align: center;
+}
+.title--black{
+    color: #222222;
+}
+.section-name{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.14em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #222222;
+    align-items: center;
+    min-height: 40px;
+    padding-inline: 25px;
+    border-radius: 4px;
+    background-color: var(--button-bg-color);
+    color: white;
+    font-size: clamp(0.625rem, 0.5536rem + 0.3571vw, 0.875rem);
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.button:hover{
+    color: #000;
+    background-color: #fff;
+}
+.button:active{
+    scale: 1.05;
+}
