@@ -1,0 +1,34 @@
+.dark{
+    background-color: #222;
+    min-height: 1000px;
+    padding-top: 100px;
+}
+@media only screen and (max-width: 1024px) {
+    .dark{
+        min-height: 600px;
+    }
+}
+.dark__wrapper{
+    display: flex;
+    justify-content: center;
+}
+.dark__img{
+    background-image: url('./../img/dark/dark-photo.png');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 792px;
+}
+@media only screen and (max-width: 1024px) {
+    .dark__img{
+        width: 400px;
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .dark__img{
+        width: 250px;
+        height: 400px;
+    }
+}
