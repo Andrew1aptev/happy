@@ -1,0 +1,56 @@
+.feedback{
+    padding: 100px 0px;
+    background: #E5E5E5;
+}
+.feedback__row {
+    display: grid;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+@media only screen and (max-width: 460px) {
+    .feedback__row{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+.feedback__card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    padding: 30px 37px 30px 30px;
+    min-height: 225px;
+}
+.feedback__comment {
+    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+    line-height: 1.5;
+    color: #222;
+    max-width: 312px;
+}
+.feedback__user {
+    display: flex;
+    column-gap: 10px;
+}
+.feedback__avatar {
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+.feedback__avatar--1{
+    background-image: url('./../img/feedback/avatar-1.png');
+}
+.feedback__avatar--2{
+    background-image: url('./../img/feedback/avatar-2.png');
+}
+.feedback__avatar--3{
+    background-image: url('./../img/feedback/avatar-3.png');
+}
+.feedback__user-text {
+}
+.feedback__name {
+}
+.feedback__about {
+}

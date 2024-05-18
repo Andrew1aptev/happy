@@ -1,9 +1,6 @@
 .price{
     padding: 100px 0px;
 }
-.price__description{
-    margin-bottom: 40px;
-}
 .price__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
