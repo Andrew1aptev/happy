@@ -1032,6 +1032,7 @@ body {
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .price__card-button--orange {
