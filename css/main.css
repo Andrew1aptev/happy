@@ -946,3 +946,102 @@ body {
     height: 400px;
   }
 }
+.price {
+  padding: 100px 0px;
+}
+
+.price__description {
+  margin-bottom: 40px;
+}
+
+.price__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  row-gap: 16px;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.price__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 340px;
+  padding: 50px 0px;
+  background-color: #F2F2F2;
+  color: #0278ED;
+}
+
+@media only screen and (max-width: 768px) {
+  .price__card {
+    min-height: 300px;
+  }
+}
+.price__card--orange {
+  color: #FF5437;
+}
+
+.price__card--yellow {
+  color: #FF9209;
+}
+
+.price__card-name {
+  color: inherit;
+  font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+  line-height: 1.33;
+  text-align: center;
+}
+
+.price__card-number {
+  margin-bottom: 25px;
+  color: inherit;
+  font-size: clamp(3.125rem, 2.1607rem + 4.8214vw, 6.5rem);
+  line-height: 1.15;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+.price__card-period {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: clamp(0.6875rem, 0.6339rem + 0.2679vw, 0.875rem);
+  line-height: 1.43;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price__card-button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 40px;
+  padding-inline: 25px;
+  border: none;
+  border-radius: 4px;
+  background-color: #0278ED;
+  color: #fff;
+  font-size: clamp(0.625rem, 0.5536rem + 0.3571vw, 0.875rem);
+  line-height: 1.29;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.price__card-button--orange {
+  background-color: #FF5437;
+}
+
+.price__card-button--yellow {
+  background-color: #FF9209;
+}
+
+.price__card-button:active {
+  scale: 1.05;
+}
