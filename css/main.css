@@ -1115,3 +1115,21 @@ body {
 .feedback__avatar--3 {
   background-image: url("./../img/feedback/avatar-3.png");
 }
+
+.download {
+  padding: 100px 0px;
+}
+
+.download__link {
+  display: block;
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.download__link--appstore {
+  background-image: url("./../img/download/appstore.svg");
+  width: 180px;
+  height: 60px;
+}
