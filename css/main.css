@@ -113,25 +113,6 @@ body {
 }
 
 /**
-   Приводим к единому цвету svg-элементы
-  */
-svg *[fill] {
-  fill: currentColor;
-}
-
-svg *[stroke] {
-  stroke: currentColor;
-}
-
-/**
-   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
-  */
-svg * {
-  -webkit-transition-property: fill, stroke;
-  transition-property: fill, stroke;
-}
-
-/**
    Удаляем все анимации и переходы для людей,
    которые предпочитают их не использовать
   */
@@ -1132,4 +1113,99 @@ body {
   background-image: url("./../img/download/appstore.svg");
   width: 180px;
   height: 60px;
+}
+
+.faq__title-section, .faq__description {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.faq {
+  background-color: #E5E5E5;
+  padding: 100px 0px;
+}
+
+.faq__wrapper {
+  display: grid;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 1024px) {
+  .faq__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.faq__content {
+  min-height: 150px;
+}
+
+.faq__title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.56;
+}
+
+.faq__text {
+  font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+  line-height: 1.5;
+}
+
+.footer {
+  padding: 100px 0px;
+  background-color: #F2F2F2;
+}
+
+.footer__logo {
+  display: block;
+  background-image: url("./../img/footer/footer-logo.svg");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 126px;
+  margin: 0 auto 25px auto;
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.footer__socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.footer__info {
+  font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+  text-align: center;
+  color: #B1B1B1;
+  line-height: 1.5;
+}
+
+.footer__info-link {
+  color: #666666;
+  text-decoration: none;
 }

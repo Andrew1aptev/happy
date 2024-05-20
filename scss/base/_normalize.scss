@@ -111,23 +111,23 @@ body {
   line-height: 1.5;
 }
 
-/**
-   Приводим к единому цвету svg-элементы
-  */
-svg *[fill] {
-  fill: currentColor;
-}
+// /**
+//    Приводим к единому цвету svg-элементы
+//   */
+// svg *[fill] {
+//   fill: currentColor;
+// }
 
-svg *[stroke] {
-  stroke: currentColor;
-}
+// svg *[stroke] {
+//   stroke: currentColor;
+// }
 
-/**
-   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
-  */
-svg * {
-  transition-property: fill, stroke;
-}
+// /**
+//    Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+//   */
+// svg * {
+//   transition-property: fill, stroke;
+// }
 
 /**
    Удаляем все анимации и переходы для людей,
